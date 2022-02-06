@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel = "icon" href = "myIcon.ico">
+    <link rel = "stylesheet" href = "login.css">
+    <link rel = "stylesheet" href = "navbar.css">
+</head>
+<body>
+    <%- include('./partials/navbar.ejs')%>
+        <form action = "/login" method = "POST" class = "card">
+            <h1>Login</h1>
+             <div class = "headings"> <label>Username </label></div>
+             <div><input type = "text" id = "username" name = "username" class = "texts" placeholder="Username"></div>
+                <div class = "headings"><label>Password </label></div>
+                <div><input type = "password" id = "password" name = "password" class = "texts" placeholder="Password"></div>
+                <div class = "btn-container"><button id = "button">Submit</button></div>
+            
+        </form>
+</body>
+</html>

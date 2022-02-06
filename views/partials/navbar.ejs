@@ -1,0 +1,36 @@
+<div class="nav-bar">
+    <div class="nav-brand">
+        Webchat
+    </div>
+
+    <a href = "#" class = "hamburger-btn">
+        <span class="stripe">
+
+        </span>
+        <span class="stripe">
+
+        </span>
+        <span class="stripe">
+
+        </span>
+    </a>
+
+    <div class="nav-links">
+        <div class="nav-item" id="item-1">
+            <a href = "/"id="home">Home</a>
+        </div>
+        <% if(!currentUser){ %>
+        <div class="nav-item" id="item-2">
+            <a href = "/login" id="Login">Login</a>
+        </div>
+        <div class="nav-item" id="item-3">
+            <a href = "/register"id="Register">Register</a>
+        </div>
+        <% }else{ %>
+        <div class="nav-item" id="item-3">
+            <a href = "/logout" id="Logout">Logout</a>
+        </div>
+        <% } %>
+    </div>
+</div>
+<script src = "navbar.js"></script>

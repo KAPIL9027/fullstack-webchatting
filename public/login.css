@@ -1,0 +1,70 @@
+:root
+{
+    --primary: #078877;
+}
+
+body
+{
+    margin:0;
+    padding:0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/7234451/pexels-photo-7234451.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card
+{
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10%;
+}
+
+h1
+{
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+.texts
+{
+
+    margin: 1rem 1rem;
+    width: 19.5rem;
+    height: 2rem;
+    border-radius: 100vh;
+    text-align: center;
+}
+
+.headings
+{
+    color: white;
+   font-size: 1.5rem;
+}
+
+#button
+{
+    padding: 1rem 3.5rem;
+    margin: 1.5rem 1.5rem;
+    border-radius: 100vh;
+    background-color: transparent;
+    color:white;
+    border: 1px solid var(--primary);
+    transition: background-color 0.4s ease-in;
+}
+
+#button:hover
+{
+ background-color: var(--primary);
+ transform: scale(1.1);
+}
+

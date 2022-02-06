@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel = "icon" href = "myIcon.ico">
+    <link rel = "stylesheet" href = "register.css">
+    <link rel = "stylesheet" href = "navbar.css">
+    
+</head>
+<body>
+    <%- include('./partials/navbar.ejs') %>
+        <form action = "/register" method = "POST" class = "card">
+            <h1>Register</h1>
+            <div class = "headings"> <label>Email </label></div>
+            <div><input type = "text" id = "username" name = "user[email]" class = "texts" placeholder="Email"></div>
+             <div class = "headings"> <label>Username </label></div>
+             <div><input type = "text" id = "username" name = "user[username]" class = "texts" placeholder="Username"></div>
+                <div class = "headings"><label>Password </label></div>
+                <div><input type = "password" id = "password" name = "user[password]" class = "texts" placeholder="Password"></div>
+                <div class = "btn-container"><button id = "button">Submit</button></div>
+            
+        </form>
+</body>
+</html>

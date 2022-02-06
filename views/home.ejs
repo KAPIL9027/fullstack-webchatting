@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebChat</title>
+    <link rel = "icon" href = "myIcon.ico">
+    <link rel = "stylesheet" href = "home.css">
+    <link rel = "stylesheet" href = "navbar.css">
+</head>
+<body>
+    <%- include('./partials/navbar.ejs')%>
+    <div id = "leading-line">
+        <h1 class = "join ">WebChat with your friends by connecting with them in a chat room or create a new room to chat.</h1>
+    </div>
+    <div>
+        <input type = "text" id = "roomId" placeholder = "Enter a Room Id" >
+    </div>
+        <div class = "join">
+            <a id = "join-btn" href = "" class = "btn">Enter Room</a>
+        </div>
+    <div id = "or">
+        <p>OR</p>
+    </div>
+    <div >
+        <a href = "/createRoom" id = "create-btn" class = "btn">Create Room</a>
+    </div>
+    
+    <script> const rooms = "<%=roooms%>" </script>
+    <script src = "home.js"></script>
+</body>
+</html>

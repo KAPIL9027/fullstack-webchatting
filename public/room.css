@@ -1,0 +1,114 @@
+
+:root
+{
+    --primary: rgba(204, 1, 255, 0.7);
+    --secondary: rgba(120, 1, 255, 0.7);
+}
+body
+{
+    margin:0;
+    padding:0;
+    background-image: url('https://images.pexels.com/photos/2962135/pexels-photo-2962135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+#chat
+{
+    background-color: rgba(0,0,0,0.5);
+    width: 90vw;
+    height: 85vh;
+    margin: 30px 0px;
+    overflow-y: auto;
+}
+
+.message-dialog
+{
+    color: white;
+    padding: 20px 10px;
+    margin: 10px 10px;
+    text-align: center;
+    border-radius: 100vh;
+}
+
+.message-left
+{
+    background-image: linear-gradient(var(--primary),var(--secondary));
+ float: left;
+ clear: both;
+}
+.message-right
+{
+ background-color: blue;
+ float: right;
+ clear: both;
+}
+#message
+{
+    width: 90vw;
+    height: 15vh;
+    margin:0;
+    padding:0;
+}
+#message-box
+{
+    width: 85%;
+    height: 41%;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    border-radius: 100vh;
+    text-align: center;
+}
+#send
+{
+    width: 14%;
+    height: 41%;
+    border-radius: 100vh;
+    background-color: rgb(120, 1, 255);
+    border: 1px solid rgb(120, 1, 255);
+    color: white;
+    transition: background-color 0.5s ease-in;
+}
+#send:hover
+{
+    background-color: rgb(204, 1, 255);
+    border: none;
+    color: white;
+}
+#send:focus
+{
+    background-color: rgb(204, 1, 255);
+    border: none;
+    color: white;
+}
+
+h1
+{
+    color: white;
+}
+
+
+@media(max-width:768px)
+{
+    #message-box
+    {
+        width:77%;
+    }
+
+    #send
+    {
+        width:21%;
+    }
+}

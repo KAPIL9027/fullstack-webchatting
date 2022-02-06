@@ -15,12 +15,13 @@ const appendDialog = (message,position)=>
     div.classList.add('message-left');
     else
     div.classList.add('message-right');
-    container.append(div);
     if(position !== 'left')
     {
         player = new Audio('noti.wav');
         player.play();
     }
+    container.append(div);
+   
 }
 
 appendDialog(`Room id: ${roomId}`,'left');

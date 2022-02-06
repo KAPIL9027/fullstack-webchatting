@@ -14,6 +14,6 @@ joinButton.addEventListener('click',(e)=>
  
  const id = roomId.value;
   console.log(rooms);
-      joinButton.href = `http://localhost:8080/${id}`
+      joinButton.href = `/${id}`
 
 });
